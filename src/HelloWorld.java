@@ -9,12 +9,16 @@ public class HelloWorld {
        String MyString = "This is my string,";
         System.out.println(MyString);
 
-        double myNumber = 3.14;
+        float myNumber = 3.14f;
         System.out.println(myNumber);
+//        assign double or float with F(literal value) to indicate Float
 
         int x = 5;
         System.out.println(++x);
         System.out.println(x);
+//        first prntln adds to x and redefines x, second print is same as first
+
+
 
 
     }
