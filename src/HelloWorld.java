@@ -9,8 +9,8 @@ public class HelloWorld {
        String MyString = "This is my string,";
         System.out.println(MyString);
 
-
-
+        long myNumber = ;
+        System.out.println(myNumber);
             }
         }
 
