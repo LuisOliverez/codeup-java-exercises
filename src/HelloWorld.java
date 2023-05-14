@@ -13,15 +13,20 @@ public class HelloWorld {
         System.out.println(myNumber);
 //        assign double or float with F(literal value) to indicate Float
 
-        int x = 5;
-        System.out.println(++x);
+
+
+
+
+//        int x = 4;
+//        x = x + 5;
+
+        int x = 4;
+        x += 5;
         System.out.println(x);
-//        first prntln adds to x and redefines x, second print is now same as first
 
 
-    String theNumberThree = "three";
-    Object o = theNumberThree;
-    int three = (int) o;
+
+
 
 
 
