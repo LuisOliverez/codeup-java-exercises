@@ -9,9 +9,7 @@ public class HelloWorld {
        String MyString = "This is my string,";
         System.out.println(MyString);
 
-        char MyChar = 'a';
-        MyString = MyString + MyChar;
-        System.out.println(MyString);
+
 
             }
         }
