@@ -11,22 +11,20 @@ public class HelloWorld {
 
         float myNumber = 3.14f;
         System.out.println(myNumber);
+
 /*
-        assign double or float with F(literal value) to indicate Float
-        int x = 3;
-        int y = 4;
-        y = y * x;
+      assign double or float with F(literal value) to indicate Float
+        int x = 10;
+        int y = 2;
+        x = x / y;
+        y = y - x;
 */
-        int x = 3;
-        int y = 4;
-    y *= x;
+
+        int x = 10;
+        int y = 2;
+
+x /= y;
         System.out.println(y);
-
-
-
-
-
-
 
 
 
