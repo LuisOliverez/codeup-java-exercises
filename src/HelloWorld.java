@@ -9,7 +9,7 @@ public class HelloWorld {
        String MyString = "This is my string,";
         System.out.println(MyString);
 
-        long myNumber = ;
+        long myNumber = 123L;
         System.out.println(myNumber);
             }
         }
