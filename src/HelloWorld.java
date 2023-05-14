@@ -17,11 +17,10 @@ public class HelloWorld {
         System.out.println(++x);
         System.out.println(x);
 //        first prntln adds to x and redefines x, second print is now same as first
+
+
+    String theNumberThree = "three";
+    Object o = theNumberThree;
+    int three = (int) o;
     }
 }
-
-public class class {
-    int x = 10;
-
-        }
-//        cannot assign a class named class. class is a keyword
