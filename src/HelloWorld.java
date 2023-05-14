@@ -1,12 +1,12 @@
 public class HelloWorld {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("Hello, World!");
 
-       int MyFavNum = 22;
-       System.out.println(MyFavNum);
+        int MyFavNum = 22;
+        System.out.println(MyFavNum);
 
 
-       String MyString = "This is my string,";
+        String MyString = "This is my string,";
         System.out.println(MyString);
 
         float myNumber = 3.14f;
@@ -16,11 +16,12 @@ public class HelloWorld {
         int x = 5;
         System.out.println(++x);
         System.out.println(x);
-//        first prntln adds to x and redefines x, second print is same as first
-
-
-
-
+//        first prntln adds to x and redefines x, second print is now same as first
     }
-        }
+}
 
+public class class {
+    int x = 10;
+
+        }
+//        cannot assign a class named class. class is a keyword
