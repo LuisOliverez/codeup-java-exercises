@@ -9,8 +9,8 @@ public class HelloWorld {
         String MyString = "This is my string,";
         System.out.println(MyString);
 
-        float myNumber = 3.14f;
-        System.out.println(myNumber);
+        float MyNumber = 3.14f;
+        System.out.println(MyNumber);
 
 /*
       assign double or float with F(literal value) to indicate Float
