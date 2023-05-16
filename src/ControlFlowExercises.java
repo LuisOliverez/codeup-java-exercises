@@ -24,13 +24,28 @@ public class ControlFlowExercises {
 //        } while (i < 1000000L);
 
 
-        for (long i = 2; i <1000000L; i *= i){
-            System.out.println(i);
-        }
+//        for (long i = 2; i <1000000L; i *= i){
+//            System.out.println(i);
+//        }
 
 
 
 // -------------------------#2---------------------
+
+        for(int i = 1; i <= 100; i++){
+            if(i % 3 == 0 && i % 5 ==0){
+                System.out.println("FizzBuzz");
+            }else if(i %3 == 0){
+                System.out.println("Fiz");
+            } else if (i % 5 ==0) {
+                System.out.println("Buzz");
+            }else {
+                System.out.println(i);
+            }
+        }
+
+
+
 
 
 // -------------------------#3---------------------
