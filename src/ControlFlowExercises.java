@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
@@ -32,23 +34,35 @@ public class ControlFlowExercises {
 
 // -------------------------#2---------------------
 
-        for(int i = 1; i <= 100; i++){
-            if(i % 3 == 0 && i % 5 ==0){
-                System.out.println("FizzBuzz");
-            }else if(i %3 == 0){
-                System.out.println("Fiz");
-            } else if (i % 5 ==0) {
-                System.out.println("Buzz");
-            }else {
-                System.out.println(i);
-            }
-        }
-
-
-
+//        for(int i = 1; i <= 100; i++){
+//            if(i % 3 == 0 && i % 5 ==0){
+//                System.out.println("FizzBuzz");
+//            }else if(i %3 == 0){
+//                System.out.println("Fiz");
+//            } else if (i % 5 ==0) {
+//                System.out.println("Buzz");
+//            }else {
+//                System.out.println(i);
+//            }
+//        }
+//
 
 
 // -------------------------#3---------------------
+
+
+        Scanner sc = new Scanner(System.in);//prompt user for number
+        System.out.println("what number would you like to go up to?");
+        int limit = sc.nextInt();
+
+
+        System.out.println("Number\tSquare\tCube");//table header
+            for (int i = 1; i <= limit; i++){
+                int square = i * i;//calculate squared
+                int cube = i * i * i;//calculate cubed
+
+                System.out.printf("%-6d | %-7d | %-5d\n",i,square,cube);//display the values in tabular format
+            }
 
 
 // -------------------------#4---------------------
