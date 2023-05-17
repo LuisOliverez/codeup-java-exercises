@@ -4,8 +4,7 @@ public class Bob {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        String input = "";
-        System.out.println("Say or ask Bob something.");
+        System.out.println("Do you have a question or comment for Bob?");
 
             String userInput = sc.nextLine();
             String response;
