@@ -1,4 +1,4 @@
-//import java.sql.SQLOutput;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class ControlFlowExercises {
@@ -7,17 +7,23 @@ public class ControlFlowExercises {
 // -------------------------#1---------------------
 //        int i = 5;
 //        while(i <= 15) {
-//            System.out.print(i);
+//            System.out.print(i + " ");
 //            i++;
 //        }
 
-//        long i = 2;
+//        long i = 0;
 //        do {
 //            System.out.println(i);
-//            i *= i;
-//        }while (i < 1000000L);
+//            i += 2;
+//        }while (i <= 100);
 
-//if int has capacity, why is a long needed to prevent overflow???
+
+//        int i = 100;
+//        do {
+//            System.out.println(i);
+//            i-=5;
+//        }while (i >= -10);
+
 
 
 //        long i = 2;
@@ -26,14 +32,19 @@ public class ControlFlowExercises {
 //            i *= i;
 //        } while (i < 1000000L);
 
+//
+//        for (long i =100; i >= -10; i -= 5){
+//            System.out.println(i);
+//        }
+
 
 //        for (long i = 2; i <1000000L; i *= i){
 //            System.out.println(i);
 //        }
 
-
-// -------------------------#2---------------------
-
+//
+//// -------------------------#2---------------------
+//
 //        for(int i = 1; i <= 100; i++){
 //            if(i % 3 == 0 && i % 5 ==0){
 //                System.out.println("FizzBuzz");
@@ -47,26 +58,34 @@ public class ControlFlowExercises {
 //        }
 //
 
-
-// -------------------------#3---------------------
-
-
-//        Scanner sc = new Scanner(System.in);//prompt user for number
-//        System.out.println("what number would you like to go up to?");
-//        int limit = sc.nextInt();
+//
+//// -------------------------#3---------------------
 //
 //
-//        System.out.println("Number\tSquare\tCube");//table header
-//            for (int i = 1; i <= limit; i++){
+
+//        boolean confirm = true;
+//
+//        do {
+//            Scanner sc = new Scanner(System.in);//prompt user for number
+//            System.out.println("what number would you like to go up to?");
+//            int userInput = sc.nextInt();
+//
+//            System.out.println("Here is your table!");
+//            System.out.println("Number\tSquared\tCubed");//table header
+//            System.out.println("------ | ------- | -----");
+//            for (int i = 1; i <= userInput; i++) {
 //                int square = i * i;//calculate squared
 //                int cube = i * i * i;//calculate cubed
 //
-//                System.out.printf("%-6d | %-7d | %-5d\n",i,square,cube);//display the values in tabular format
+//                System.out.printf("%-6d | %-7d | %-5d\n", i, square, cube);//display the values in tabular format
 //            }
-
-
-// -------------------------#4---------------------
-
+//            System.out.println("Continue?(y/n)");
+//            confirm = sc.next().equalsIgnoreCase("y");
+//        }while(confirm);
+//        System.out.println("Have a good day!");
+//
+//// -------------------------#4---------------------
+//
         Scanner sc = new Scanner(System.in);
         String choice = "";
 
@@ -89,9 +108,9 @@ public class ControlFlowExercises {
 
             System.out.println("Letter grade is: " + letterGrade);
 
-            System.out.print("Would you like to continue? (yes/no): ");
+            System.out.print("Would you like to continue? (y/n): ");
             choice = sc.nextLine();
-        } while (choice.equalsIgnoreCase("yes"));
+        } while (choice.equalsIgnoreCase("y"));
 
         System.out.println("Goodbye!");
 
