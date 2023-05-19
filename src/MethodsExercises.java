@@ -115,19 +115,29 @@ public class MethodsExercises {
 //
 //
 //    }
-//}
+// }
 
         //#4
-
         Scanner sc = new Scanner(System.in);
-        System.out.println("How many sides would you like on your set of dice?");
-        int numberOfSides = sc.nextInt();
-        System.out.println(numberOfSides);
+        String choice;
+
+        do {
 
 
+            System.out.println("How many sides would you like on your set of dice?");
+            int numberOfSides = sc.nextInt();
 
 
+            int dice1 = (int) (Math.random() * numberOfSides + 1);
+            int dice2 = (int) (Math.random() * numberOfSides + 1);
+            int sum = (dice1+dice2);
+            System.out.println("Dice #1 is: " +dice1);
+            System.out.println("And dice #2 is: "+ dice2);
+            System.out.println("You rolled a " + sum);
+            System.out.println("Do you want to roll again? (y/n): ");
+            choice = sc.next();
 
+        } while (choice.equalsIgnoreCase("y"));
 
 
     }
