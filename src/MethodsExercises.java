@@ -33,11 +33,19 @@ public class MethodsExercises {
     int userInput = sc.nextInt();
 
         if (userInput >= min && userInput <= max) {
-            System.out.println("Valid input!");
+            System.out.println(userInput +" is a valid input!");
         } else {
             System.out.println("Invalid input! Please try again.");
-            getInteger(min, max);
+            getInteger(min, max); //recursive call with same parameters/conditions.
         }
+    }
+
+    //#3
+    public static int getFactorial(int userInt){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number to find its factorial: ");
+        int userInput = sc.nextInt();
+        return userInput;
     }
 
 
@@ -65,6 +73,12 @@ public class MethodsExercises {
         int min= 1;
         int max = 10;
         getInteger(min, max);
+
+
+        //#3
+
+
+
 
 
 

@@ -3,45 +3,47 @@ import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
-// -------------------------#1---------------------//
+
+        //#1
 //        int i = 5;
 //        while(i <= 15) {
 //            System.out.print(i + " ");
 //            i++;
 //        }
-
+//
 //        long i = 0;
 //        do {
 //            System.out.println(i);
 //            i += 2;
 //        }while (i <= 100);
-
+//
 //
 //        int i = 100;
 //        do {
 //            System.out.println(i);
 //            i-=5;
 //        }while (i >= -10);
-
-
+//
+//
 //        long i = 2;
 //        do {
 //            System.out.println(i);
 //            i *= i;
 //        } while (i < 1000000L);
+//
+//
+//        for (long i =100; i >= -10; i -= 5){
+//            System.out.println(i);
+//        }
+//
+//
+//        for (long i = 2; i <1000000L; i *= i){
+//            System.out.println(i);
+//        }
 
 
-        for (long i =100; i >= -10; i -= 5){
-            System.out.println(i);
-        }
 
-
-        for (long i = 2; i <1000000L; i *= i){
-            System.out.println(i);
-        }
-
-
-// -------------------------#2---------------------//
+        //#2
 
         for(int i = 1; i <= 100; i++){
             if(i % 3 == 0 && i % 5 ==0){
@@ -57,7 +59,8 @@ public class ControlFlowExercises {
 
 
 
-// -------------------------#3---------------------//
+
+        //#3
 
 
         boolean confirm = true;
@@ -81,7 +84,8 @@ public class ControlFlowExercises {
         }while(confirm);
         System.out.println("Have a good day!");
 
-// -------------------------#4---------------------//
+
+        //#4
 
         Scanner sc = new Scanner(System.in);
         String choice = "";
