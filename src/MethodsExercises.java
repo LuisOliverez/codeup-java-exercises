@@ -5,48 +5,55 @@ public class MethodsExercises {
 
     public static void main(String[] args) {
 
-        //UNCOMMENT ONE PROBLEM AT A TIME, BE SURE TO INCLUDE BOTH '}'
-        // AT THE END OF EACH PROBLEM :)
+
+
+        //UNCOMMENT ONE PROBLEM AT A TIME AND COMMENT THEM OUT ONCE CHECKED :)
+
+
+
+
 
         // #1
 
-//        int sum = Addition(5, 3);
-//        System.out.println("Sum is: " + sum);
-//
-//        int diff = Subtraction(5, 3);
-//        System.out.println("Difference is: " + diff);
-//
-//        int product = Multiplication(5, 3);
-//        System.out.println("Product is: " + product);
-//
-//        double quotient = Division(5, 3);
-//        System.out.println("Quotient is: " + quotient);
-//
-//        int remainder = Modulus(5, 3);
-//        System.out.println("Remainder(modulus) is: " + remainder);
-//    }
-//
-//
-//        public static int Addition ( int num1, int num2){
-//            return num1 + num2;
-//        }
-//
-//        public static int Subtraction ( int num1, int num2){
-//            return num1 - num2;
-//        }
-//
-//        public static int Multiplication ( int num1, int num2){
-//            return num1 * num2;
-//        }
-//
-//        public static double Division ( double num1, double num2){
-//            return num1 / num2;
-//        }
-//
-//        public static int Modulus ( int num1, int num2){
-//            return num1 % num2;
-//        }
-//    }
+        int sum = Addition(5, 3);
+        System.out.println("Sum is: " + sum);
+
+        int diff = Subtraction(5, 3);
+        System.out.println("Difference is: " + diff);
+
+        int product = Multiplication(5, 3);
+        System.out.println("Product is: " + product);
+
+        double quotient = Division(5, 3);
+        System.out.println("Quotient is: " + quotient);
+
+        int remainder = Modulus(5, 3);
+        System.out.println("Remainder(modulus) is: " + remainder);
+    }
+
+
+        public static int Addition ( int num1, int num2){
+            return num1 + num2;
+        }
+
+        public static int Subtraction ( int num1, int num2){
+            return num1 - num2;
+        }
+
+        public static int Multiplication ( int num1, int num2){
+            return num1 * num2;
+        }
+
+        public static double Division ( double num1, double num2){
+            return num1 / num2;
+        }
+
+        public static int Modulus ( int num1, int num2){
+            return num1 % num2;
+
+
+
+
 
 
         //#2
@@ -67,9 +74,11 @@ public class MethodsExercises {
 //                System.out.println("Invalid input! Please try again.");
 //                getInteger(min, max); //recursive call with same parameters/conditions IF invalid.
 //            }
-//
-//        }
-//    }
+
+
+
+
+
 
 
         //#3
@@ -81,7 +90,7 @@ public class MethodsExercises {
 //            int number;
 //
 //            do {
-//                System.out.println("Please enter a number between 1-10 and find its Factorial");
+//                System.out.println("Please enter a number between 1-10 to find its Factorial");
 //                number = sc.nextInt();
 //            } while (number < 1 || number > 10);
 //
@@ -112,37 +121,42 @@ public class MethodsExercises {
 //            }
 //        }
 //        return formula.toString();
-//
-//
-//    }
-// }
+
+
+
+
+
 
         //#4
-        Scanner sc = new Scanner(System.in);
-        String choice;
 
-        do {
+//        Scanner sc = new Scanner(System.in);
+//        String choice;
+//
+//        do {
+//
+//
+//            System.out.println("How many sides would you like on your set of dice?");
+//            int numberOfSides = sc.nextInt();//set number of sides based on user input
+//
+//
+//            int dice1 = (int) (Math.random() * numberOfSides + 1);//multiply number of sides times random number and add 1
+//            int dice2 = (int) (Math.random() * numberOfSides + 1);
+//            int sum = (dice1+dice2);
+//            System.out.println("Dice #1 is: " +dice1);
+//            System.out.println("And dice #2 is: "+ dice2);
+//            System.out.println("You rolled a " + sum);
+//            System.out.println("Do you want to roll again? (y/n): ");
+//            choice = sc.next();
+//
+//        } while (choice.equalsIgnoreCase("y"));
+//
 
 
-            System.out.println("How many sides would you like on your set of dice?");
-            int numberOfSides = sc.nextInt();
 
 
-            int dice1 = (int) (Math.random() * numberOfSides + 1);
-            int dice2 = (int) (Math.random() * numberOfSides + 1);
-            int sum = (dice1+dice2);
-            System.out.println("Dice #1 is: " +dice1);
-            System.out.println("And dice #2 is: "+ dice2);
-            System.out.println("You rolled a " + sum);
-            System.out.println("Do you want to roll again? (y/n): ");
-            choice = sc.next();
 
-        } while (choice.equalsIgnoreCase("y"));
+
 
 
     }
 }
-
-
-
-
