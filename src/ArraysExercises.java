@@ -15,9 +15,12 @@ public class ArraysExercises {
             updatedPeople[i]= peopleArr[i];
         }
         updatedPeople[updatedPeople.length -1]=personToAdd;
+        System.out.println(Arrays.toString(updatedPeople));
+
 
         for (String people : updatedPeople) {
             System.out.println(people);
+
         }
 
     }
