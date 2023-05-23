@@ -23,8 +23,32 @@ public class MoviesApplication {
                     displayMovies(MoviesArray.findAll());
                     break;
                 case "2":
-                    System.out.println("Enter the category: ");
-                    String category = sc.nextLine();
+                    displayCategories();
+                    int categoryOption = Integer.parseInt(sc.nextLine());
+                    String category;
+
+                    switch (categoryOption){
+                        case 1:
+                            category = "all";
+                            break;
+                        case 2:
+                            category = "animated";
+                            break;
+                        case 3:
+                            category = "drama";
+                            break;
+                        case 4:
+                            category = "horror";
+                            break;
+                        case 5:
+                            category = "sifi";
+                            break;
+                        default:
+                            System.out.println("Invalid category option. Showing all movies.");
+                            category = "all";
+                            break;
+                    }
+
                     displayMoviesByCategory(MoviesArray.findAll(), category);
                     break;
                 case "3":
@@ -62,7 +86,20 @@ public class MoviesApplication {
             }
         }
     }
-}
+
+
+        private static void displayCategories() {
+            System.out.println("Categories:");
+            System.out.println("0 - Exit");
+            System.out.println("1 - View all movies");
+            System.out.println("2 - View movies in the Animated category");
+            System.out.println("3 - View movies in the Drama category");
+            System.out.println("4 - View movies in the Horror category");
+            System.out.println("5 - View movies in the Sci-Fi category");
+        }
+
+    }
+
 
 
 
