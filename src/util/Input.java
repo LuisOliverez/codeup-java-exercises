@@ -3,23 +3,26 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-    private Scanner sc;
+    private Scanner scanner;
 
     public Input() {
-        sc = new Scanner(System.in);
+       this.scanner = new Scanner(System.in);
     }
 
 
     //    String getString()
     public String getString() {
-        return sc.nextLine();
+        return this.scanner.nextLine();
     }
 
 
     //    boolean yesNo()
     public Boolean yesNo() {
-        String input = getString().toLowerCase();
-        return input.equals("y") || input.equals("yes");
+        if (scanner.nextLine().equalsIgnoreCase("yes") || scanner.nextLine().equalsIgnoreCase("y")){
+            return true;
+        }else {
+            return false;
+        }
     }
 
 
@@ -27,14 +30,14 @@ public class Input {
     public int getInt(int min, int max) {
         int value;
         do {
-            System.out.printf("Please enter a number between %d and %d: ", min, max);
-            while (!sc.hasNextInt()) {
+            System.out.printf("Please enter an integer between %d and %d: ", min, max);
+            while (!scanner.hasNextInt()) {
                 System.out.printf("Invalid input! Please enter an integer between %d and %d: ", min, max);
-                sc.next();
+                scanner.next();
             }
-            value = sc.nextInt();
+            value = scanner.nextInt();
         } while (value < min || value > max);
-        sc.nextLine();
+        scanner.nextLine();
         return value;
     }
 
@@ -42,12 +45,12 @@ public class Input {
     //    int getInt()
     public int getInt() {
         System.out.println("Please enter an integer: ");
-        while (!sc.hasNextInt()) {
+        while (!scanner.hasNextInt()) {
             System.out.println("Invalid input! Please enter an integer: ");
-            sc.next();
+            scanner.next();
         }
-        int value = sc.nextInt();
-        sc.nextLine();
+        int value = scanner.nextInt();
+        scanner.nextLine();
         return value;
     }
 
@@ -57,13 +60,13 @@ public class Input {
         double value;
         do {
             System.out.printf("Please enter a decimal number between %.2f and %.2f: ", min, max);
-            while (!sc.hasNextDouble()) {
+            while (!scanner.hasNextDouble()) {
                 System.out.printf("Invalid input! Please enter a decimal number between %.2f and %.2f: ", min, max);
-                sc.next();
+                scanner.next();
             }
-            value = sc.nextDouble();
+            value = scanner.nextDouble();
         } while (value < min || value > max);
-        sc.nextLine();
+        scanner.nextLine();
         return value;
     }
 
@@ -72,19 +75,25 @@ public class Input {
 //    double getDouble()
 public double getDouble(){
     System.out.println("Please enter a decimal number: ");
-    while (!sc.hasNextDouble()){
+    while (!scanner.hasNextDouble()){
         System.out.print("Invalid input! Please enter a decimal number: ");
-        sc.next();
+        scanner.next();
     }
-    double value = sc.nextDouble();
-    sc.nextLine();
+    double value = scanner.nextDouble();
+    scanner.nextLine();
     return value;
 
     }
 public void close(){
-        sc.close();
+        scanner.close();
 
     }
 
-}
 
+
+    public static void main(String[] args) {
+        Input inputOne = new Input();
+        System.out.println("yesNo");
+        System.out.println(inputOne.yesNo());
+    }
+}
