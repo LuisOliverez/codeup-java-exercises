@@ -55,18 +55,15 @@ public class GradesApplication {
         String choice;
 
         do {
-            //FOR LOOP TO PRINT OUT ALL USERNAMES AND AVERAGE GRADE
+            //FOR LOOP TO PRINT OUT ALL USERNAMES
+            System.out.println("Here are the GitHub usernames of our students: ");
             for (String username : students.keySet()) {
-                Student student = students.get(username);
-                double averageGrade = student.getGradeAverage();
-                System.out.println("Usernames: " + username);
-                //System.out.println("Average Grade: " +averageGrade);
+                System.out.print("| " +username+ " |");
             }
 
 
-
             //prompt user for input
-            System.out.println("Enter a username to see more about them:");
+            System.out.println("\nEnter a username to see more about them:");
             String enteredname = sc.nextLine();
 
             //retrieve the student from the map
