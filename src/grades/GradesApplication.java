@@ -1,6 +1,7 @@
 package grades;
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class GradesApplication {
 
@@ -48,12 +49,32 @@ public class GradesApplication {
 
 
         //FOR LOOP TO PRINT OUT ALL USERNAMES AND AVERAGE GRADE
-        for (String username : students.keySet()){
+        for (String username : students.keySet()) {
             Student student = students.get(username);
             double averageGrade = student.getGradeAverage();
-            System.out.println("Usernames: " +username);
+            System.out.println("Usernames: " + username);
             //System.out.println("Average Grade: " +averageGrade);
         }
 
+            //create Scanner object to capture input
+            Scanner sc = new Scanner(System.in);
+
+            //prompt user for input
+            System.out.println("Enter a username to see more about them:");
+            String enteredname = sc.nextLine();
+
+            //retrieve the student from the map
+            Student selectedStudent = students.get(enteredname);
+
+            //check if the student exists in the map
+            if (selectedStudent != null){
+                System.out.println("Name: " +selectedStudent.getName());
+                System.out.println("Average Grade: " +selectedStudent.getGradeAverage());
+            }else {
+                System.out.println("That student does not exist");
+            }
+
+        }
+
     }
-}
+
