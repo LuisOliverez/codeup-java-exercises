@@ -31,7 +31,7 @@ public class Student {
             for (int grade : grades){
                 sum += grade;
             }
-            return (double) sum / grades.size();
+            return (double) sum / grades.size();//calculate average grade(.size counts how many items in an array {sum/number of grades)
         }
     }
 

@@ -19,8 +19,8 @@ public class InputTest {
         System.out.println("Ranged integer entered was: " +userInputIntInRange);
 
 
-        int userInputInt = input.getInt();
-        System.out.println("Integer entered was: " +userInputInt);
+//        int userInputInt = input.getInt();
+//        System.out.println("Integer entered was: " +userInputInt);
 
 
         double userInputDoubleInRange = input.getDouble(0.0, 100.0);
